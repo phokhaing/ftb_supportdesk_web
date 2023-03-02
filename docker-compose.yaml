@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  api:
+    build: .
+    image: ftb_supportdesk_web
+    container_name: ftb_supportdesk_web
+    ports:
+      - "3002:3002" # "local_port:default_image_port"
+    volumes:
+      - .:/ftb_supportdesk_web #current_dir:default_image_dir
+    # command: python3 manage.py runserver 0.0.0.0:8001
+    networks:
+      ftb_supportdesk_web_network:
+        ipv4_address: 192.168.3.2
+
+networks:
+  ftb_supportdesk_web_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.3.0/24 # from 192.168.0.(0-255)
+          gateway: 192.168.3.1

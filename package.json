@@ -1,0 +1,39 @@
+{
+  "name": "ftb_web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^2.9.10",
+    "@reduxjs/toolkit": "^1.9.0",
+    "@sweetalert2/themes": "^5.0.15",
+    "axios": "^1.2.0",
+    "cookie": "^0.5.0",
+    "cookies-next": "^2.1.1",
+    "dayjs": "^1.11.7",
+    "js-cookie": "^3.0.1",
+    "jwt-decode": "^3.1.2",
+    "next": "^13.0.6",
+    "next-redux-wrapper": "^8.0.0",
+    "nookies": "^2.5.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.40.0",
+    "react-idle-timer": "^5.5.3",
+    "react-redux": "^8.0.5",
+    "react-toastify": "^9.1.1",
+    "sweetalert2": "^11.7.0",
+    "swr": "^2.0.3",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.18",
+    "eslint": "8.29.0",
+    "eslint-config-next": "13.0.6"
+  }
+}
